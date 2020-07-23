@@ -1,3 +1,13 @@
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
+
+
+.apple-ID {
+    background-color: white;
+    border-bottom: 1px solid $border;
+    border-top: 1px solid $border;
+    margin: 15px 0;
+    padding: 20px 5px;
+    @include flexy($align: center);
+}
