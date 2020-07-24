@@ -3,7 +3,9 @@
 /* ============================================= */
 
 .name {
-    padding: 0 10px;
+    width: 100%;
+    @include flexy($just: space-between, $align: center);
+    padding-left: 10px;
     p {
         font-size: .95rem;
     }

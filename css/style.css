@@ -341,7 +341,11 @@ template {
 /*              Typography                       */
 /* ============================================= */
 .name {
-  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
 }
 .name p {
   font-size: 0.95rem;
@@ -431,18 +435,16 @@ input[type=search]:focus {
   border-top: 1px solid #ccc;
   margin: 15px 0;
   padding: 10px 15px;
-  position: relative;
   display: flex;
   align-items: center;
 }
 
-.arrow {
-  position: absolute;
-  left: 300px;
-}
-
 ul {
   list-style: none;
+}
+
+li {
+  padding: 0 0 0 5px;
 }
 
 .menu {
@@ -455,6 +457,27 @@ ul {
 .menu-items {
   display: flex;
   align-items: center;
+}
+.menu-items img {
+  margin-right: 15px;
+}
+.menu-items .menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.menu-items .last-menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* ============================================= */
