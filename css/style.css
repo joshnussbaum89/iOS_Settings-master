@@ -479,6 +479,13 @@ li {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+.menu-items .span-flex-grow {
+  flex-grow: 2;
+}
+.menu-items .span-subtext {
+  color: lightgrey;
+  padding: 0 20px;
+}
 
 /* ============================================= */
 /*              Images                           */
