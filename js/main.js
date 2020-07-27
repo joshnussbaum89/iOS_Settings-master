@@ -1,13 +1,13 @@
+const search = document.querySelector('#search');
 
-const search = document.querySelector('.search');
+// Hide search icons when focused
+search.addEventListener('focusin', () => {
+    document.querySelector('.search-icon').classList.toggle('hide-content');
+    document.querySelector('.mic-icon').classList.toggle('hide-content');
+});
 
-search.addEventListener('click', function () {
-
-    document.querySelector('.search-icon').style.visibility = 'hidden';
-    document.querySelector('.mic-icon').style.visibility = 'hidden';
-    search.addEventListener('click', function () {
-        document.querySelector('.search-icon').style.visibility = 'visible';
-        document.querySelector('.mic-icon').style.visibility = 'visible';
-    })
-
+// Show search icons when not in focus
+search.addEventListener('focusout', function () {
+    document.querySelector('.search-icon').classList.toggle('show-content');
+    document.querySelector('.mic-icon').classList.toggle('show-content');
 });

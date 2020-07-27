@@ -1,3 +1,15 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
+
+.hide-content {
+    opacity: 0;
+    transition: 200ms;
+    pointer-events: none;
+}
+
+.show-content {
+    opacity: 1;
+    transition: 200ms;
+    pointer-events: none;
+}
