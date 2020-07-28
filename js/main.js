@@ -8,6 +8,6 @@ search.addEventListener('focusin', () => {
 
 // Show search icons when not in focus
 search.addEventListener('focusout', function () {
-    document.querySelector('.search-icon').classList.toggle('show-content');
-    document.querySelector('.mic-icon').classList.toggle('show-content');
+    document.querySelector('.search-icon').classList.toggle('hide-content');
+    document.querySelector('.mic-icon').classList.toggle('hide-content');
 });
